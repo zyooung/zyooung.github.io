@@ -1,0 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: 山羊日记
+email: zyooung@gmail.com
+description: 但愿不是每个公民都愿意作沉默的羔羊 # use > to ignore newlines until "baseurl:"
+baseurl: # "/blog" # the subpath of your site, e.g. /blog
+url: "http://zyooung.com" # the base hostname & protocol for your site
+twitter_username: zyooung
+github_username:  zyooung
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Third-party services
+# just leave someone empty to disable it
+# google_analytics:
+disqus_shortname: zyooung
+
+# used this for post_excerpt at index_page
+excerpt_separator: <!--description-->
+
+# default settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+
+# use heading as the title instead of front matter
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
+
+plugins:
+  - jekyll-titles-from-headings
